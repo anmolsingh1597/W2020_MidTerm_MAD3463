@@ -14,7 +14,7 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {  String reverse = "";    // new string reverse is generted with null value
-        if(s!=null) {
+        if(s!=null) {   //if for handling null
             char ch[] = s.toCharArray();  //string s is converted to char array ch[]
 
             for (int i = ch.length - 1; i >= 0; i--) {    //loop through ch[] till the length of string
@@ -23,7 +23,7 @@ public class LambtonStringTools
 
 
         }
-        else{
+        else{   //else condition
             reverse="Output"+reverse;
         }
         return reverse;   //returing the reversed string
