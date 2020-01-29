@@ -14,12 +14,12 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-        char ch[] = s.toCharArray();
-        String reverse = "";
-        for (int i = ch.length - 1; i >= 0; i--) {
-            reverse += ch[i];
+        char ch[] = s.toCharArray();  //string s is converted to char array ch[]
+        String reverse = "";    // new string reverse is generted with null value
+        for (int i = ch.length - 1; i >= 0; i--) {    //loop through ch[] till the length of string
+            reverse += ch[i];    // characters from the last are added to string
         }
-        return reverse;
+        return reverse;   //returing the reversed string
 
     }
     
