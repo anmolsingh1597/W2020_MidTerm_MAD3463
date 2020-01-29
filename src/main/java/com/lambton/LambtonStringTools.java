@@ -32,8 +32,18 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s) 
     {
+        String[] wordInString = s.split("\\s+");
 
-        return null;
+        String capitalIntials = "";
+        if (wordInString.length == 3) {
+            capitalIntials = wordInString[0].substring(0, 1).toUpperCase() + ". "
+                    + wordInString[1].substring(0, 1).toUpperCase() + ". "
+                    + wordInString[2].substring(0, 1).toUpperCase() + wordInString[2].substring(1).toLowerCase();
+        } else {
+            capitalIntials = null;
+        }
+        return capitalIntials;
+
     }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
