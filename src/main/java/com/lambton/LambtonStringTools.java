@@ -51,19 +51,19 @@ public class LambtonStringTools
     {
         s=s.toLowerCase(); //setting up string to lowercase
         int charactercount = 256;  //setting up count for all characters
-        int[] count = new int[charactercount];
-        int i;
+        int[] count = new int[charactercount]; // count array for storing all the characters
+        int i;  //used in loops
         for (i = 0; i < s.length(); i++)
-            (count[s.charAt(i)])++;
+            (count[s.charAt(i)])++;  //count the character occurence from its index and add by 1 if same character occur again
         int mostFrequent = 0;
         for (i = 0; i < charactercount; i++) {
             if (count[i] > count[mostFrequent]) {
-                mostFrequent = i;
+                mostFrequent = i;  //seeting up index value of most frequent one
             } else if (count[i] == count[mostFrequent]) {
                 mostFrequent = i;
             }
         }
-        return (char) mostFrequent;
+        return (char) mostFrequent;  //returning the character that occur most frequently
     }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
