@@ -41,7 +41,7 @@ public class C0777245Main {
         int decimal = LambtonStringTools.binaryToDecimal("101010");
         System.out.println("Input  : 101010");
         System.out.println("Output : " + decimal);
-        int nulldecimal = LambtonStringTools.binaryToDecimal(null);
+        int nulldecimal = LambtonStringTools.binaryToDecimal(null);//null entry added
         System.out.println("Input  : null");
         System.out.println("Output : " + nulldecimal);
         
