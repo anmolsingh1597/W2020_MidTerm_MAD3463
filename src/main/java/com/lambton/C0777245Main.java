@@ -22,7 +22,7 @@ public class C0777245Main {
 
         rev = LambtonStringTools.reverse(null);
         System.out.println("Input  : NULL");
-        if(rev == null)
+        if(rev == null)// null resolved
         {
             System.out.println("Function returns NULL value");
         }else {
