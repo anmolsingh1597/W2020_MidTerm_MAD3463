@@ -31,16 +31,18 @@ public class LambtonStringTools
     
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
-    {
+    {  String capitalIntials = "";
+        if(s!=null){
         String[] wordInString = s.split("\\s+");  //seperated out words from string
 
-        String capitalIntials = "";  //generated empty string for intials
+         //generated empty string for intials
         if (wordInString.length == 3) {
             capitalIntials = wordInString[0].substring(0, 1).toUpperCase() + ". "
                     + wordInString[1].substring(0, 1).toUpperCase() + ". "
                     + wordInString[2].substring(0, 1).toUpperCase() + wordInString[2].substring(1).toLowerCase();
         } else {
             capitalIntials = null;
+        }
         }
         return capitalIntials;
 

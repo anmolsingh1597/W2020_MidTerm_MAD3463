@@ -5,6 +5,8 @@
  */
 package com.lambton;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Pritesh Patel
@@ -31,6 +33,9 @@ public class C0777245Main {
         String init = LambtonStringTools.initials("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
         System.out.println("Output : " + init);
+        String nullvalue= LambtonStringTools.initials(null);
+        System.out.println("Input  : NULL");
+        System.out.println("Output : "+nullvalue);
         
         System.out.println("\n--- Binary to Decimal");
         int decimal = LambtonStringTools.binaryToDecimal("101010");
