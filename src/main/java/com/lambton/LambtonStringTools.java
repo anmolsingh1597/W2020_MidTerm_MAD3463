@@ -62,7 +62,12 @@ public class LambtonStringTools
             if (count[i] > count[mostFrequent]) {
                 mostFrequent = i;  //seeting up index value of most frequent one
             } else if (count[i] == count[mostFrequent]) {
-                mostFrequent = i;
+                if(i>mostFrequent) {
+                    mostFrequent = i;
+                }    else{
+                        i=mostFrequent;
+                    }
+
             }
         }
         return (char) mostFrequent;  //returning the character that occur most frequently
