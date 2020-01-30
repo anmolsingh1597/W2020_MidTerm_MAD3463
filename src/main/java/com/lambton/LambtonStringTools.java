@@ -68,12 +68,15 @@ public class LambtonStringTools
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s) 
-    { int decimal=0;
-    if(!s.contains(0||1)){
-        decimal=-1;
-    }else {
-        decimal = Integer.parseInt(s, 2);
-    }return decimal;
+    {
+        int decimal=0;
+        try {
+            decimal = Integer.parseInt(s, 2);
+        } catch (Exception e) {
+            decimal = -1;
+        }
+        return decimal;
+
     }
      
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
