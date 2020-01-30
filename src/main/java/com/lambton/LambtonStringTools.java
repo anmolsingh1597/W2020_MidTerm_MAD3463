@@ -32,7 +32,7 @@ public class LambtonStringTools
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s)
     {  String capitalIntials = "";
-        if(s!=null){
+        if(s!=null){  //if to handle null
         String[] wordInString = s.split("\\s+");  //seperated out words from string
 
          //generated empty string for intials
