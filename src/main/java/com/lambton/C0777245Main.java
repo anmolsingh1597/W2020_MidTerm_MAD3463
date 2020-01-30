@@ -33,7 +33,7 @@ public class C0777245Main {
         String init = LambtonStringTools.initials("pritesh kumar pAtEl");
         System.out.println("Input  : pritesh kumar pAtEl");
         System.out.println("Output : " + init);
-        String nullvalue= LambtonStringTools.initials(null);
+        String nullvalue= LambtonStringTools.initials(null);  //null entry addd
         System.out.println("Input  : NULL");
         System.out.println("Output : "+nullvalue);
         
