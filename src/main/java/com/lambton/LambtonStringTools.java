@@ -73,7 +73,7 @@ public class LambtonStringTools
     {
         int decimal=0;
         try {
-            decimal = Integer.parseInt(s, 2);
+            decimal = Integer.parseInt(s, 2);  //null is already handled
         } catch (Exception e) {
             decimal = -1;
         }
